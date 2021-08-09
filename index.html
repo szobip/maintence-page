@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website under maintenance</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: "Rajdhani", sans-serif;
+        display: table;
+      }
+      .maintenance {
+        height: 100vh;
+        position: relative;
+      }
+
+      .maintenance::before {
+        background: url("https://gamerhash.com/images/404-sky.svg") no-repeat
+          center center;
+        background-size: cover;
+        height: 45%;
+        background-position-y: bottom;
+        content: "";
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .content {
+        text-align: center;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 34px;
+        color: #171a1f;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #737373;
+        max-width: 400px;
+        margin: auto;
+      }
+
+      b {
+        color: #171a1f;
+        font-weight: 500;
+      }
+
+      img {
+        padding: 20px 30px;
+      }
+      .astro {
+        padding: 0;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maintenance vh-100">
+      <img
+        src="https://gamerhash.com/images/gamerhash-logo.svg"
+        alt="GamerHash logo"
+      />
+
+      <div class="content">
+        <img
+          src="https://gamerhash.com/images/maintenance.svg"
+          alt="maintenance"
+          class="astro"
+        />
+
+        <h1>Website under maintenance</h1>
+
+        <p>
+          This website is currently undergoing scheduled maintenance. We should
+          be back shortly
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
